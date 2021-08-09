@@ -20,7 +20,7 @@ object seasar {
       val cipher=(f:(Char,Int,String)=>Char,text:String,key:Int,alphabet:String)=>text.map(f(_,key,alphabet))
 
 
-      val alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+      val alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
       var text="The Caesar Cipher is a very simple \nencryption technique in which one replaces each \nletter in the plaintext for another letter that is a fxed \nnumber of positions down the alphabet."
 
       val ct=cipher(encryption,text,5,alphabet)
